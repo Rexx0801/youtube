@@ -1,0 +1,138 @@
+.watch-video-card-wrapper {
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.watch-video-play {
+}
+
+.watch-video-play-embbed {
+  width: 1280px;
+  height: 720px;
+}
+
+.watch-video-title-wrapper {
+  margin: 8px 0;
+}
+
+.watch-video-hashtag {
+  color: #1C72F0;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.watch-video-title {
+  margin-top: 4px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.watch-video-react {
+  display: flex;
+  justify-content: space-between;
+}
+
+.watch-video-react-right {
+  display: flex;
+  align-items: center;
+}
+
+.watch-video-react-right .icon {
+  margin-right: 8px;
+}
+
+.watch-video-react-right .text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.icon-wrapper {
+  display: flex;
+  cursor: no-drop;
+  margin-right: 16px;
+}
+
+.like-wrapper {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+.like-wrapper::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: var(--heading-text-color);
+  width: 100%;
+  position: absolute;
+  bottom: -16px;
+  right: 10px;
+}
+
+.watch-video-info {
+  margin: 12px 0;
+  padding-bottom: 12px;
+}
+
+.channel-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--heading-text-color);
+}
+
+.channel-name:hover {
+  color: inherit;
+}
+
+.channel-sub {
+  font-size: 12px;
+  color: var(--text-color);
+  line-height: 14px;
+}
+
+.channel-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.watch-video-caption {
+  margin: 8px 0 20px 64px;
+  font-weight: 400;
+  max-width: 60%;
+}
+
+@media (max-width: 768px) {
+  .watch-video__card {
+    padding: 0 16px;
+  }
+  .watch-video-play-embbed {
+    width: 736px;
+    height: 412px;
+  }
+  .watch-video-title-wrapper {
+    margin: 4px 0;
+  }
+  .watch-video-react {
+    flex-direction: column;
+  }
+  .watch-video-react-right {
+    align-self: center;
+    margin-top: 8px;
+  }
+  .like-wrapper::after {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .watch-video__card {
+    padding: 0 8px;
+}
+  .watch-video-play-embbed {
+    width: 359px;
+    height: 194px;
+  }
+  .watch-video-react-right {
+    margin-top: 24px;
+  }
+}

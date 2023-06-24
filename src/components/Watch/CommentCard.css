@@ -1,0 +1,40 @@
+.comment-row-wrapper {
+  margin: 24px 0;
+}
+
+.user-name {
+  font-weight: 500;
+}
+
+.comment-time {
+  font-size: 13px;
+  margin-left: 4px;
+  color: var(--text-color);
+}
+
+.comment-react {
+  display: flex;
+  font-size: 12px;
+  margin-top: 12px;
+  color: var(--heading-text-color);
+}
+
+.comment-react .wrapper {
+  display: flex;
+  margin-right: 12px;
+}
+
+.comment-react .icon {
+  font-size: 14px;
+  margin-right: 4px;
+  cursor: no-drop;
+}
+
+.comment-row-wrapper .icon-option {
+  display: none;
+}
+
+.comment-row-wrapper:hover .icon-option {
+  display: block;
+  cursor: no-drop;
+}

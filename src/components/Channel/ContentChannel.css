@@ -1,0 +1,133 @@
+.channel-cover{
+  background-position: center center;
+  background-size: cover;
+  background-color: #ccc;
+  height: 270px;
+}
+
+.channel__info {
+  background-color: var(--background-color);
+}
+
+.channel__name {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--heading-text-color);
+}
+
+.channel__sub {
+  color: var(--text-color);
+}
+
+/* Tab */
+
+.channel__tab {
+  display: flex;
+  position: relative;
+}
+
+.channel__tab.fixed {
+  position: fixed;
+  z-index: 999999;
+  top: 60px;
+}
+
+.channel__tab-wrapper.fixed {
+  position: fixed;
+  z-index: 999998;
+  top: 60px;
+  height: 41px;
+  width: 100%;
+  background: var(--background-color);
+}
+
+.channel__tab-line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  border-radius: 4px;
+  height: 4px;
+  background-color: var(--heading-text-color);
+  transition: all 0.2s ease;
+}
+
+.channel__tab-item {
+  padding: 12px 30px 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.channel__tab-item.active {
+  color: var(--heading-text-color);
+}
+
+.channel__tab-item:hover {
+  filter: brightness(0.8);
+  cursor: pointer;
+}
+
+.channel__tab-search {
+  padding: 12px 20px 4px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-color);
+  display: flex;
+}
+
+.channel__tab-search:hover {
+  cursor: pointer;
+}
+
+.channel__tab-search-input.disabled {
+  display: none;
+}
+
+.channel__tab-search-input {
+  margin-left: 4px;
+  border: none;
+  border-bottom: 2px solid var(--heading-text-color);
+  background-color: var(--background-color);
+  color: var(--heading-text-color);
+}
+
+.channel__tab-search-input:focus {
+  outline: none;
+}
+
+.channel__tab-content {
+  padding: 12px 0;
+  display: none;
+}
+
+.channel__tab-content.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .channel__tab {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .channel__tab-item {
+    display: none;
+  }
+  .channel__tab-item:nth-child(1),
+  .channel__tab-item:nth-child(2),
+  .channel__tab-item:nth-child(3) {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .channel__tab-search {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .channel-cover {
+    height: 180px;
+  }
+}
